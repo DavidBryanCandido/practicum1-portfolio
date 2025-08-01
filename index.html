@@ -7,11 +7,19 @@
         <link rel="stylesheet" href="assets/css/styles.css" />
     </head>
     <body>
-        <!-- Top Navigation -->
         <header class="top-nav">
             <div class="top-nav-container">
-                <div class="logo">My Practicum 1</div>
-                <nav style="display: none">
+                <div class="menu">
+                    <button
+                        class="hamburger-menu"
+                        aria-label="Toggle Navigation"
+                    >
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+                <nav class="nav-links-container">
                     <ul class="top-nav-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#resume">Resume</a></li>
@@ -27,35 +35,16 @@
             </div>
         </header>
 
-        <!-- Side Navigation -->
-        <aside class="side-nav">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#documentation">Documentation</a></li>
-                <li><a href="#endorsement">Endorsement</a></li>
-                <li><a href="#application">Application</a></li>
-                <li><a href="#personality">Personality Test</a></li>
-                <li><a href="#consent">Parent Consent</a></li>
-                <li><a href="#company">Company Info</a></li>
-                <li><a href="#vlog">VLOG</a></li>
-            </ul>
-        </aside>
-
-        <!-- Main Content -->
         <main class="main-content">
-            <!-- Home Section -->
-            <section id="home" class="section">
+            <section id="home" class="section hero-section">
                 <div class="home_left">
-                    <p style="color: #ffffff">
-                        Hello, <span style="color: #a5a2f2">I'm</span>
-                    </p>
-                    <p>
+                    <p>Hello, <span class="highlight">I'm</span></p>
+                    <h1>
                         David Bryan <br />
                         Candido
-                    </p>
+                    </h1>
                     <p>Welcome to My Practicum 1 Portfolio</p>
-                    <p>
+                    <p class="subtitle">
                         This site contains all required documents and media
                         related to my On-the-Job Training experience.
                     </p>
@@ -67,106 +56,239 @@
                 </div>
             </section>
 
-            <!-- Resume -->
+            <hr class="divider" />
+
             <section id="resume" class="section">
-                <h1>Modern Resume</h1>
-                <p>You can view or download my resume here.</p>
-                <a href="downloads/resume.pdf" target="_blank" class="btn"
-                    >Download Resume</a
-                >
-                <div class="resume-container">
+                <h2>Modern Resume</h2>
+                <p class="section-description">
+                    Here you can view my resume, a summary of my skills,
+                    experience, and educational background. This document
+                    highlights my qualifications and my journey in web
+                    development.
+                </p>
+                <div class="button-container">
+                    <a
+                        href="assets/downloads/resume.pdf"
+                        target="_blank"
+                        class="btn"
+                        >Download Resume</a
+                    >
+                </div>
+                <div class="document-container">
                     <img
                         src="assets/img/resume.png"
                         alt="Resume"
-                        class="doc-image"
+                        class="document-image"
                     />
                 </div>
             </section>
 
-            <!-- Documentation -->
+            <hr class="divider" />
+
             <section id="documentation" class="section">
-                <h1>Documentation</h1>
-                <p>A summary of my activities and learnings during OJT.</p>
-                <a
-                    href="downloads/documentation.pdf"
-                    target="_blank"
-                    class="btn"
-                    >View Documentation</a
-                >
-                <summary></summary>
+                <h2>Documentation</h2>
+                <p class="section-description">
+                    This documentation provides a comprehensive summary of my
+                    activities and key learnings throughout my OJT. It covers my
+                    weekly progress, project details, and the skills I developed
+                    during my time at LGU Barangay New Kalalake.
+                </p>
+                <div class="button-container">
+                    <a
+                        href="assets/downloads/documentation.pdf"
+                        target="_blank"
+                        class="btn"
+                        >View Full Documentation</a
+                    >
+                </div>
+                <details class="summary-details">
+                    <summary>Click to view a summary of my OJT journey</summary>
+                    <div class="documentation-summary">
+                        <h3>Summary of OJT Activities</h3>
+                        <p>
+                            During my OJT from June 30 to August 1, 2025, at LGU
+                            Barangay New Kalalake, my primary focus was on the
+                            development of a
+                            <span class="bold">Barangay Management System</span
+                            >. This project was a major undertaking that allowed
+                            me to apply my skills in web development to create a
+                            practical and useful application for the local
+                            government unit.
+                        </p>
+                        <p>
+                            I was specifically assigned to develop the
+                            <span class="bold">Front Desk Module</span>, which
+                            involved creating features for certificate
+                            generation and comprehensive resident record
+                            management. This role required me to not only write
+                            code but also to engage in the full software
+                            development lifecycle—from
+                            <span class="bold"
+                                >initial planning and system flow design</span
+                            >
+                            to <span class="bold">UI developmen</span> and
+                            <span class="bold">database integration</span>.
+                        </p>
+                        <p>
+                            Throughout the five-week period, I successfully
+                            designed and implemented the user interface for the
+                            main Dashboard, Residents Management, and
+                            Certificate Issuance pages. A key part of my work
+                            involved designing the database schema for resident
+                            information and integrating various modals to
+                            streamline the user experience for adding, editing,
+                            and generating documents. I also implemented crucial
+                            functionalities like automatic age calculation and a
+                            toast notification system for user feedback. My
+                            journey culminated in the finalization of the UI and
+                            the successful integration of both front-end and
+                            back-end logic for the assigned modules.
+                        </p>
+                    </div>
+                </details>
             </section>
 
-            <!-- Endorsement -->
+            <hr class="divider" />
+
             <section id="endorsement" class="section">
-                <h1>Endorsement & Acceptance</h1>
-                <div class="endorsement-acceptance-container">
+                <h2>Endorsement & Acceptance</h2>
+                <p class="section-description">
+                    These are the official letters of endorsement from my school
+                    and acceptance from the host company, LGU Barangay New
+                    Kalalake, formalizing my On-the-Job Training.
+                </p>
+                <div class="document-container horizontal-images">
                     <img
                         src="assets/img/endorsement-letter.png"
                         alt="Endorsement Letter"
-                        class="doc-image"
+                        class="document-image"
                     />
                     <img
                         src="assets/img/acceptance-letter.png"
-                        alt="Endorsement Letter"
-                        class="doc-image"
+                        alt="Acceptance Letter"
+                        class="document-image"
                     />
                 </div>
             </section>
 
-            <!-- Application Letter -->
+            <hr class="divider" />
+
             <section id="application" class="section">
-                <h1>Application Letter</h1>
-                <img
-                    src="assets/img/application-letter.png"
-                    alt="Application Letter"
-                    class="doc-image"
-                />
+                <h2>Application Letter</h2>
+                <p class="section-description">
+                    My formal application letter submitted to LGU Barangay New
+                    Kalalake to request an On-the-Job Training position.
+                </p>
+                <div class="document-container single-image">
+                    <img
+                        src="assets/img/application-letter.png"
+                        alt="Application Letter"
+                        class="document-image"
+                    />
+                </div>
             </section>
 
-            <!-- Personality Test -->
+            <hr class="divider" />
+
             <section id="personality" class="section">
-                <h1>16 Personality Test Result</h1>
-                <img
-                    src="assets/img/personality-test.png"
-                    alt="Personality Result"
-                    class="doc-image"
-                />
+                <h2>16 Personality Test Result</h2>
+                <p class="section-description">
+                    This is the result of my 16 Personalities Test, providing
+                    insights into my personality type, strengths, and preferred
+                    working style.
+                </p>
+                <div class="document-container">
+                    <img
+                        src="assets/img/personality-test.png"
+                        alt="Personality Result"
+                        class="document-image"
+                    />
+                </div>
             </section>
 
-            <!-- Parent Consent -->
+            <hr class="divider" />
+
             <section id="consent" class="section">
-                <h1>Parent Consent</h1>
-                <img
-                    src="assets/img/parent-consent.png"
-                    alt="Parent Consent Letter"
-                    class="doc-image"
-                />
+                <h2>Parent Consent</h2>
+                <p class="section-description">
+                    A required document granting parental consent for my
+                    participation in the On-the-Job Training program.
+                </p>
+                <div class="document-container horizontal-images">
+                    <img
+                        src="assets/img/parent-consent.png"
+                        alt="Parent Consent Letter"
+                        class="document-image"
+                    />
+                    <img
+                        src="assets/img/proof.png"
+                        alt="Proof"
+                        class="document-image"
+                    />
+                </div>
             </section>
 
-            <!-- Company Info -->
+            <hr class="divider" />
+
             <section id="company" class="section">
-                <h1>Company Profile</h1>
-                <p>Company: LGU Barangay New Kalalake</p>
-                <p>Supervisor: secretary Percival T. Roxas</p>
-                <p>Email: percyeditor@gmail.com</p>
-                <img
-                    src="assets/img/company-logo.png"
-                    alt="Company Logo"
-                    class="doc-image"
-                />
+                <h2>Company Profile</h2>
+                <p class="section-description">
+                    Details about the company where I conducted my OJT,
+                    including their mission and my direct supervisor's contact
+                    information.
+                </p>
+                <div class="company-info">
+                    <p><strong>Company:</strong> LGU Barangay New Kalalake</p>
+                    <p>
+                        <strong>Supervisor:</strong> Secretary Percival T. Roxas
+                    </p>
+                    <p>
+                        <strong>Email:</strong>
+                        <a href="mailto:percyeditor@gmail.com"
+                            >percyeditor@gmail.com</a
+                        >
+                    </p>
+                </div>
+                <div class="document-container logo-con">
+                    <img
+                        src="assets/img/company-logo.png"
+                        alt="Company Logo"
+                        class="document-image"
+                    />
+                </div>
             </section>
 
-            <!-- VLOG -->
+            <hr class="divider" />
+
             <section id="vlog" class="section">
-                <h1>Practicum VLOG</h1>
-                <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-                    frameborder="0"
-                    allowfullscreen
-                ></iframe>
+                <h2>Practicum VLOG</h2>
+                <p class="section-description">
+                    Watch my practicum VLOG to see a personal video diary of my
+                    On-the-Job Training experience, including my daily
+                    activities and reflections.
+                </p>
+                <div class="video-container">
+                    <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/your_video_id_here"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                </div>
             </section>
         </main>
+        <script>
+            // JavaScript to handle the hamburger menu toggle
+            const hamburgerMenu = document.querySelector(".hamburger-menu");
+            const navLinksContainer = document.querySelector(
+                ".nav-links-container"
+            );
+
+            hamburgerMenu.addEventListener("click", () => {
+                navLinksContainer.classList.toggle("active");
+            });
+        </script>
     </body>
 </html>
